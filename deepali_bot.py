@@ -13,7 +13,7 @@ GOOGLE_KEY = "AIzaSyDehpBD5R4UqedipYRUYxiKewc11xAu-r4"
 SEARCH_ENGINE_ID = "cfb3ef7243ab90269"
 QUERY_RANGE = 5
 GOOGLE_SEARCH_URL = "https://www.googleapis.com/customsearch/v1"
-BOT_TOKEN = "Nzg0ODE0ODQ2NjEyNjAyOTAw.X8uxyA.iQ6qedoE2wWtbqZ5fbMB6VjSCzs"
+BOT_TOKEN = "Nzg0ODE0ODQ2NjEyNjAyOTAw.X8uxyA.iQ6qedoE2wWtbqZ5fbMB6VjSCzs ;)"
 
 USERNAME = os.environ.get("POSTGRES_USERNAME")
 PASSWORD = os.environ.get("POSTGRES_PASSWORD")
