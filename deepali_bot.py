@@ -136,4 +136,4 @@ async def on_message(message):
         await message.channel.send(bot_searches)
 
 print("BOT Token", BOT_TOKEN)
-client.run(BOT_TOKEN, bot=True)
+Client.run(BOT_TOKEN)
