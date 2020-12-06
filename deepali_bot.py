@@ -1,17 +1,19 @@
 import os
 import discord
+from discord.ext import commands
+from discord.ext.commands import Bot
 import requests
 import postgresql
 from postgresql.exceptions import DuplicateTableError
 
-client = discord.Client()
-
+Client = discord.Client()
+client = commands.Bot(command_prefix = "!")
 # Constants used in the File
 GOOGLE_KEY = "AIzaSyDehpBD5R4UqedipYRUYxiKewc11xAu-r4"
 SEARCH_ENGINE_ID = "cfb3ef7243ab90269"
 QUERY_RANGE = 5
 GOOGLE_SEARCH_URL = "https://www.googleapis.com/customsearch/v1"
-BOT_TOKEN = "Nzg0ODE0ODQ2NjEyNjAyOTAw.X8uxyA.wL9Fp5VSgl89bsXgoD6T_E4OCqw"
+BOT_TOKEN = "Nzg0ODE0ODQ2NjEyNjAyOTAw.X8uxyA.iQ6qedoE2wWtbqZ5fbMB6VjSCzs"
 
 USERNAME = os.environ.get("POSTGRES_USERNAME")
 PASSWORD = os.environ.get("POSTGRES_PASSWORD")
@@ -134,4 +136,4 @@ async def on_message(message):
         await message.channel.send(bot_searches)
 
 print("BOT Token", BOT_TOKEN)
-client.run("Nzg0ODE0ODQ2NjEyNjAyOTAw.X8uxyA.iQ6qedoE2wWtbqZ5fbMB6VjSCzs")
+client.run(BOT_TOKEN, bot=True)
