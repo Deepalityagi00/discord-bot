@@ -1,2 +1,2 @@
-worker: python deepali_bot.py
+web: python deepali_bot.py
 

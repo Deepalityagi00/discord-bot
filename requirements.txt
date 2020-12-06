@@ -3,3 +3,4 @@ discord.py==1.5.1
 py-postgresql==1.2.2
 requests==2.25.0
 gunicorn==19.6.0
+Flask==1.1.2
